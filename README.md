@@ -1,0 +1,1 @@
+This project si for storing user related data
