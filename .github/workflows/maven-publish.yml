@@ -41,7 +41,7 @@ jobs:
       with:
         builder: ${{steps.buildx.outputs.name}}
         context: .
-        file: ./user_data/Dockerfile
+        file: ./Dockerfile
         platforms: linux/arm64
         push: true
         tags: morbile/user_data:latest
