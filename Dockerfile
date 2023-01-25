@@ -2,8 +2,8 @@
 # Build stage
 #
 FROM maven:3.8.3-openjdk-17 AS build
-COPY user_data/src /home/app/src
-COPY user_data/pom.xml /home/app
+COPY ./src /home/app/src
+COPY ./pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
 
 #
